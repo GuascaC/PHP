@@ -1,16 +1,16 @@
 <?php
-if($_POST){
-    $valorA=$_POST['valorA'];
-    $valorB=$_POST['valorB'];
+if(!empty($_POST['ValorA']) and !empty($_POST['ValorB'])){
+    $valorA=$_POST['ValorA'];
+    $valorB=$_POST['ValorB'];
 
     $Suma=$valorA+$valorB;
     $Rest=$valorA-$valorB;
     $Mult=$valorA*$valorB;
     $Div=$valorA/$valorB;
-    echo "Suma:"."<br>".$Suma;
-    echo "Resta:"."<br>".$Rest;
-    echo "Multiplicacion:"."<br>".$Mult;
-    echo "Division:"."<br>".$Div;
+    echo "Suma:".$Suma."<br>";
+    echo "Resta:".$Rest."<br>";
+    echo "Multiplicacion:".$Mult."<br>";
+    echo "Division:".$Div."<br>";
 }
 ?>
 <!DOCTYPE html>

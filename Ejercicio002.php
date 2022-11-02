@@ -1,6 +1,6 @@
 <?php
 //Recibir Informacion del HTML (Post)
-if ($_POST){
+if ($_POST['txtNombre']){
 $txtNombre=$_POST['txtNombre'];
 echo "Hola ".$txtNombre;
 }
@@ -16,7 +16,7 @@ echo "Hola ".$txtNombre;
 </head>
 <body>
     <br>PHP Ejecuta Html
-<form action="Ejercicio002.php" method="post"></form>
+<form action="Ejercicio002.php" method="post">
     Nombre:
     <input type="text" name="txtNombre" id="">
     <br>

@@ -17,12 +17,12 @@ echo "Hola ".$txtNombre." ".$txtApellido;
     <title>Document</title>
 </head>
 <body>
-<form action="Ejercicio004.php" method="post"></form>
+<form action="Ejercicio004.php" method="post">
     Nombre:
     <input type="text" name="txtNombre" id="">
     <br>
     Apellido:
-    <input type="text" name="txtAPellido" id="">
+    <input type="text" name="txtApellido" id="">
     <br>
     <input type="submit" value="Enviar">
 </form> 

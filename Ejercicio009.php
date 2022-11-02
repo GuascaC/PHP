@@ -1,12 +1,12 @@
 <?php
 if($_POST){
-    $valorA=$_POST['valorA'];
-    $valorB=$_POST['valorB'];
+    $valorA=$_POST['ValorA'];
+    $valorB=$_POST['ValorB'];
 
-    if($valorA != $valorB) && ($valorA > $ValorB){ //y
-        echo "Valor A es Diferente y mayor a Valor B";
+    if(($valorA != $valorB) && ($valorA > $valorB)){ //y
+        echo "Valor A es Diferente y mayor a Valor B"."<br>";
     }
-    if($valorA != $valorB) || ($valorA > $ValorB){ //o
+    if(($valorA != $valorB) || ($valorA > $ValorB)){ //o
         echo "Valor A es Diferente o mayor a Valor B";
     }
 }

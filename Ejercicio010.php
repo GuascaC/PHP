@@ -1,16 +1,16 @@
 <?php
 if($_POST){
-    $valorA=$_POST['valorA'];
-    $valorB=$_POST['valorB'];
+    $valorA=$_POST['ValorA'];
+    $valorB=$_POST['ValorB'];
 
     $Suma=$valorA+$valorB;
     $Rest=$valorA-$valorB;
     $Mult=$valorA*$valorB;
     $Div=$valorA/$valorB;
-    echo "Suma:"."<br>".$Suma;
-    echo "Resta:"."<br>".$Rest;
-    echo "Multiplicacion:"."<br>".$Mult;
-    echo "Division:"."<br>".$Div;
+    echo "Suma:".$Suma."<br>";
+    echo "Resta:".$Rest."<br>";
+    echo "Multiplicacion:".$Mult."<br>";
+    echo "Division:".$Div."<br>";
 
     if($valorA==$valorB){
 
@@ -23,10 +23,9 @@ if($_POST){
     if($valorA==5){
         echo"Los Valores son 5";      
     }    }
-    if($valorA==$valorB) && ($valorA==4){
-        echo"Los Valores A y B son iguales y son 4"
+    if(($valorA==$valorB) && ($valorA==4)){
+        echo"Los Valores A y B son iguales y son 4";
     }
-
 }
 ?>
 <!DOCTYPE html>
